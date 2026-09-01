@@ -1,0 +1,101 @@
+:root {
+  --cor-principal: #2e7d32;
+  --cor-hover: #256428;
+  --cor-fundo: #f4f4f4;
+  --cor-branco: #ffffff;
+  --cor-texto: #333;
+  --cor-texto-claro: #888;
+  --cor-borda: #ccc;
+}
+
+body {
+  background-color: var(--cor-fundo);
+  font-family: Arial, sans-serif;
+  color: var(--cor-texto);
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.container {
+  background-color: var(--cor-branco);
+  width: 100%;
+  max-width: 480px;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: var(--cor-principal);
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.subtitulo {
+  color: var(--cor-texto-claro);
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: var(--cor-principal);
+  border-bottom: 2px solid var(--cor-principal);
+  padding-bottom: 5px;
+  margin-top: 25px;
+}
+
+.campo {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid var(--cor-borda);
+  border-radius: 5px;
+}
+
+input:focus {
+  border-color: var(--cor-principal);
+  outline: none;
+}
+
+
+.coluna {
+  display: flex;
+  gap: 15px;
+}
+
+.coluna .campo {
+  flex: 1;
+  margin: 10px;
+  margin-bottom: 10px;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: var(--cor-principal);
+  color: var(--cor-branco);
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--cor-hover);
+}
